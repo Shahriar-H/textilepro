@@ -1,0 +1,629 @@
+:root{
+    --mainBgColor:#880088;
+    --hoverColor: rgb(4, 161, 161);
+    --mainFontStyle: Arial, Helvetica, sans-serif;
+}
+
+*, h1, h2, h3, h4, h5, h6, p, ul, a, dl, dt, dd, ol, ul, li {
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--mainFontStyle);
+
+}
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.logo{
+    max-width: 80px;
+}
+.stickyHead{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    animation: NavComing 0.4s linear;
+    -webkit-animation: NavComing 0.4s linear;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    box-shadow: 0px 0px 4px 0px #88008867;
+
+}
+@keyframes NavComing {
+    0%{
+        top: -150px;
+        opacity: 0;
+    }100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.stickyHead ul li a{
+    color: black;
+}
+.BodySpaceLayout{
+    padding: 30px 100px 30px 100px;
+}
+header{
+    background-color: var(--mainBgColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+ul li{
+    list-style-type: none;
+    float: left;
+    padding: 5px 15px 5px 15px;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: white;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: var(--hoverColor);
+}
+.stickyHead .loginbtn{
+    border: 1px solid black !important;
+}
+.loginbtn{
+    border: 1px solid white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+.loginbtn:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.HeadSection{
+    background-color: var(--mainBgColor);
+    height: 70vh;
+    background-color: #880088;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    
+}
+.headerSecImage{
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    margin: auto;
+    max-width: 30%;
+    animation: floatingImage 5s linear infinite;
+    -webkit-animation: floatingImage 5s linear infinite;
+}
+@keyframes floatingImage {
+    0%{
+        top: 0px;
+        right: 150px;
+    }50%{
+        top: 30px;
+        right:130px ;
+    }100%{
+        top: 0px;
+        right:150px ;
+    }
+}
+.leftHeadText h1{
+    color:white;
+    font-size: 30px;
+}
+.leftHeadText p{
+    color: rgb(218, 214, 214);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.leftDetailDiv{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.leftHeadText a{
+    color: white;
+    border: 1px solid white;
+    border:  1px solid white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.categorDiv{
+    width: 22%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px #88008867;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.categorDiv p{
+    color: gray;
+}
+.categoryConteiner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -40px;
+}
+.categorDiv a{
+    color: black;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+.categorDiv:hover a{
+    color: var(--hoverColor);
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.serviceSection{
+    margin-top: 200px;
+}
+.serviceDiv,.serviceDiv1{
+    padding: 70px 20px 50px 20px;
+    box-shadow: 0px 0px 10px 0px #88008867;
+    width: 23%;
+    
+}
+.serviceContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.serviceDiv{
+    margin: 10px;
+    background-color: white;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    position: relative;
+}
+.serviceDiv1{
+    background-color: var(--mainBgColor);
+}
+.serviceDiv h1{
+    font-size: 40px;
+    
+    font-weight: 800;
+}
+.serviceDiv1 h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+}
+.serviceDiv1 h3, .serviceDiv1 p{
+    color: white;
+}
+.serviceDiv1 h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.serviceDiv p{
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+}
+.serviceDiv h1{
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    color: rgba(218, 216, 216, 0.479);
+    z-index: 0;
+    font-size: 90px;
+}
+.serviceDiv1 h1{
+    font-size: 40px !important;
+    color: white;
+    top: 20px;
+}
+.serviceDiv1 p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.serviceDiv h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+}
+.serviceDiv:hover{
+    background-color: var(--mainBgColor);
+}
+.serviceDiv:hover p, .serviceDiv:hover h3{
+    color: rgb(255, 255, 255);
+}
+
+.serviceDiv:hover h1{
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 0;
+    font-size: 40px;
+}
+
+.aboutSecContainer{
+    padding: 50px;
+    height: 600px;
+    background-image: url(https://itcompetition.hilti.group/assets/images/Website-Banner-Cover.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+
+}
+.aboutDiv{
+    width: 55%;
+    float: right;
+    
+}
+.aboutDiv p{
+    color: rgb(46, 45, 45);
+    font-size: 17px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutSecDivCon{
+    position: relative;
+}
+.bgshowdiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    opacity: 0.5;
+    width: 50%;
+    height: auto;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.linkSectionF{
+    width: 33.3%;
+    padding: 20px;
+}
+
+.contactSec{
+    width: 35%;
+    padding: 20px;
+}
+.contactSec form{
+    width: 100%;
+    padding: 20px;
+}
+.inputDiv label{
+    color: black;
+}
+.inputDiv{
+    padding-bottom: 10px;
+}
+form .inputDiv input, form .inputDiv textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000a8;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+input:focus, textarea:focus{
+    outline: 1px solid #f704ffa8;
+    
+}
+.sendbtn{
+    width: unset !important;
+    background-color: #880088;
+    color: white;
+    padding: 8px 20px 8px 20px !important;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.logoSec{
+    width: 50%;
+    padding: 20px;
+}
+.socialIcon{
+    margin-top: 20px;
+}
+.socialIcon a{
+    color: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    padding: 10px;
+}
+.socialIcon a{
+    font-size: 24px;
+}
+.socialIcon a:hover{
+    color: #880088;
+
+}
+form{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px #f39df3a8;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.inputDiv textarea{
+    height: 150px;
+    resize: none;
+    
+}
+
+.linkSectionF li a{
+    color: rgb(172, 170, 170);
+    font-size: 17px;
+}
+.linkSectionF li{
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Responsive View Start */
+
+@media only screen and (min-width:200px) and (max-width:992px) {
+    .mobileMenu{
+        display: block;
+    }
+    .linkSectionF,.logoSec, .contactSec{
+        width: 100%;
+    }
+    .logo{
+        max-width: 50px;
+    }
+    .pcvivew{
+        display: none;
+    }
+    .shoeMenu{
+        display: none;
+    }
+    .barSize{
+        color:white !important;
+    }
+    .stickyHead .barSize{
+        color: rgb(4, 4, 133) !important;
+    }
+    .animMenu{
+        animation: menuAnim 0.4s linear;
+        -webkit-animation: menuAnim 0.4s linear;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+    .mobileMenuShoew{
+        background-color: white;
+        position: fixed;
+        top: 75px;
+        width: 95%;
+        margin: 10px;
+        left: 0;
+        height: 200px;
+        z-index: 9;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px #88008867;
+
+    }
+    .aboutDiv{
+        width: 100%;
+        float: none;
+        
+    }
+    .aboutSecContainer{
+        padding: 15px;
+        height: unset;
+        background-image: none;
+    }
+    @keyframes menuAnim {
+        0%{
+            top: -250px;
+            opacity: 0;
+        }100%{
+            top:50px;
+            opacity: 1;
+        }
+    }
+    ul li{
+        float: none !important;
+    }
+    li a{
+        color: black;
+    }
+    .leftHeadText{
+        width: 100%;
+        text-align: center;
+    }
+    .barSize{
+        font-size: 24px;
+        color: rgba(152, 230, 152, 0.658);
+    }
+    .headerSecImage {
+        display: none;
+    }
+    .categoryConteiner {
+        margin-top: -70px;
+    }
+    .categorDiv {
+        width: 42%;
+    }
+    .BodySpaceLayout {
+        padding: 30px 10px 30px 10px;
+      }
+    .serviceDiv,.serviceDiv1{
+       
+        width: 42%;
+        
+    }
+    .serviceSection {
+        margin-top: 380px;
+      }
+
+
+
+}
+@media only screen and (min-width:200px) and (max-width:577px) {
+    .categorDiv {
+        width: 92%;
+    }
+    .serviceDiv,.serviceDiv1{
+        
+        width: 92%;
+        
+    }
+    .serviceSection {
+        margin-top: 780px;
+      }
+
+}
+@media only screen and (min-width:200px) and (max-width:433px) {
+   
+    .serviceSection {
+        margin-top: 880px;
+      }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
